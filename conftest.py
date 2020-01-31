@@ -4,7 +4,7 @@ from fixture.application import Application
 
 @pytest.fixture(scope="session")
 def app(request):
-    fixture = Application("D:\\Python training\\FreeAddressBookPortable\\AddressBook")
+    fixture = Application("D:\\PythonTraining\\FreeAddressBookPortable\\AddressBook.exe")
     request.addfinalizer(fixture.distroy)
     return fixture
 
